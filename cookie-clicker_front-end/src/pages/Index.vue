@@ -78,12 +78,16 @@ export default {
     }
 }
 
+import {getCookie} from '../../public/js/index/cookieHandler';
+
 $(document).ready(function () {
     goldenCookie.convertGCookieTimeToMS();
     goldenCookie.setNextSpawnTime();
     setInterval(goldenCookie.removeGoldenCookie, 100);
     load();
-    window.setInterval(save, 60000);
+    if(getCookie("autosave" === 'true')){
+        window.setInterval(save, 60000);
+    }
 });
 </script>
 
