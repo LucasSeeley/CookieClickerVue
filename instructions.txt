@@ -1,0 +1,2 @@
+//start project w 
+npm run serve
