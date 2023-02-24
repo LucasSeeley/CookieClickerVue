@@ -6,9 +6,8 @@ import {randomInteger} from "../site"
 export let name;
 let json;
 
-export function bringUpRenamePromt()
+export function bringUpRenamePrompt()
 {
-    $("#rename-cover").css("visibility", "visible");
 
     $("#name-input").keyup(function () {
         if ($("#name-input").val().length > 20) {

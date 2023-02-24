@@ -41,6 +41,7 @@
 
             </td>
             <td class="upgrade column">
+                <UpgradeStore />
             </td>
         </tr>
     </table>
@@ -55,6 +56,8 @@ import RenameModal from '../components/RenameModal.vue';
 import CookieBanners from '../components/Banners.vue';
 import OptionsModal from '../components/OptionsModal.vue';
 import {options} from '../../public/js/index/optionsHandler';
+import { getCookie } from '../../public/js/index/gameSaveManager.js';
+import UpgradeStore from '../components/Store.vue'
 
 export default {
     name: 'CookieClicker',
@@ -65,7 +68,8 @@ export default {
         CookieButton,
         RenameModal,
         CookieBanners,
-        OptionsModal
+        OptionsModal,
+        UpgradeStore
     },
     methods:
     {     
@@ -77,8 +81,6 @@ export default {
         }
     }
 }
-
-import {getCookie} from '../../public/js/index/cookieHandler';
 
 $(document).ready(function () {
     goldenCookie.convertGCookieTimeToMS();

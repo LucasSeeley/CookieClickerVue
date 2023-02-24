@@ -10,12 +10,12 @@
                         OPTIONS
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">Autosave</label>
+                        <input class="form-check-input" type="checkbox" value="" id="autosave-check">
+                        <label class="form-check-label" for="autosave-check">Autosave</label>
                     </div>
                     <div class="button-box">
                         <button class="btn btn-outline-dark"
-                            data-bs-dismiss="modal">Confirm</button>
+                            data-bs-dismiss="modal" @click="doToggleAutosave">Confirm</button>
                         <button class="btn btn-outline-dark" data-bs-dismiss="modal">Cancel</button>
                     </div>
                 </div>

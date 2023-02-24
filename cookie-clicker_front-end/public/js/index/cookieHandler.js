@@ -9,7 +9,7 @@ export function cookieClicked() {
     cookies += cookiesGainedOnClick;
     updateGUI();
 
-    if(cookies % 100 === 0){
+    if(cookies % 10 == 0){
         createToast(`Hooray! ${cookies} Cookies Clicked`, 2000);
     }
 }
@@ -32,6 +32,7 @@ export function changeAmountOfCookies(amount){
 
 export function changeCps(amount){
     cps = amount;
+    updateGUI();
 }
 
 export function calculateCps(){

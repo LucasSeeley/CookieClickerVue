@@ -30,6 +30,6 @@ function updateGUI()
     document.getElementById("cps-counter").innerHTML = cookieHandler.cps;
 }
 
-function getCookie(name){
+export function getCookie(name){
     return document.cookie.split("; ").find((x) => x.startsWith(`${name}=`))?.split("=")[1]
 }

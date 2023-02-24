@@ -15,3 +15,8 @@ export function randomFloat(min, max)
     return Math.random() * (max - min) + min;
 }
  
+export function roundToNearest(number, place = 1) 
+{
+    let multiplier = Math.pow(10, place);
+    return Math.round(number * multiplier) / multiplier;
+}
