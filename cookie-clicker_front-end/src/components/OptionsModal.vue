@@ -1,16 +1,16 @@
 <template>
-        <div class="modal" id="options-modal">
+    <div class="modal" id="options-modal">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content dialog">
                 <div class="modal-body">
-                    <button type="button" data-bs-target="#options-modal"
+                    <button type="button" data-bs-target="#modal"
                         class="btn-close btn-close-white close-button" aria-lavel="Close"
                         data-bs-dismiss="modal"></button>
                     <div class="header">
                         OPTIONS
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="autosave-check">
+                        <input class="form-check-input" type="checkbox" id="autosave-check">
                         <label class="form-check-label" for="autosave-check">Autosave</label>
                     </div>
                     <div class="button-box">

@@ -1,6 +1,8 @@
 <template>
     <div @click="doBuy($event)" class="item" :id="identifier">
+        <!--
         <img class="thumbnail" :src="'/images/' + imgName" draggable="false" />
+        -->
         <div class="name">{{ name }}</div>
         <div class="price">
             <img class="small-cookie" src="/images/cookie.png" draggable="false" />

@@ -8,27 +8,27 @@
         <hr />
         <div class="category" id="buildings">
             <StoreBuilding name="Cursor" description="Auto-clicks once every 10 seconds." identifier="cursor-building"
-                baseCost="15" />
+                baseCost=15 />
             <StoreBuilding name="Grandma" description="A nice grandma to bake more cookies."
-                identifier="grandma-building" baseCost="100" />
+                identifier="grandma-building" baseCost=100 />
             <StoreBuilding name="Farm" description="Grows cookie plants from cookie seeds." identifier="farm-building"
-                baseCost="1100" />
+                baseCost=1100 />
             <StoreBuilding name="Mine" description="Mines out cookie dough and chocolate chips."
-                identifier="mine-building" baseCost="12000" />
+                identifier="mine-building" baseCost=12000 />
             <StoreBuilding name="Factory" description="Produces large quantities of cookies."
-                identifier="factory-building" baseCost="130000" />
+                identifier="factory-building" baseCost=130000 />
             <StoreBuilding name="Bank" description="Generates cookies from interest." identifier="bank-building"
-                baseCost="1400000" />
+                baseCost=1400000 />
             <StoreBuilding name="Temple" description="Full of precious, ancient chocolate." identifier="temple-building"
-                baseCost="20000000" />
+                baseCost=20000000 />
             <StoreBuilding name="Wizard Tower" description="Summons cookies with magic spells."
-                identifier="wizard-tower-building" baseCost="330000000" />
+                identifier="wizard-tower-building" baseCost=330000000 />
             <StoreBuilding name="Shipment" description="Brings in fresh cookies from the cookie planet."
-                identifier="shipment-building" baseCost="5100000000" />
+                identifier="shipment-building" baseCost=5100000000 />
             <StoreBuilding name="Alchemy Lab" description="Turns gold into cookies!" identifier="alchemy-lab-building"
-                baseCost="75000000000" />
+                baseCost=75000000000 />
             <StoreBuilding name="Portal" description="Opens the door to the Cookieverse." identifier="portal-building"
-                baseCost="1000000000000" />
+                baseCost=1000000000000 />
         </div>
     </div>
 </template>

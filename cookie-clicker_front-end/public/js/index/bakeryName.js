@@ -8,7 +8,6 @@ let json;
 
 export function bringUpRenamePrompt()
 {
-
     $("#name-input").keyup(function () {
         if ($("#name-input").val().length > 20) {
             $("#name-input").val($("#name-input").val().substring(0, 20));
