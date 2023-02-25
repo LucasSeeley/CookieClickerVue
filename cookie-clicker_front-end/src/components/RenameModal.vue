@@ -1,5 +1,5 @@
 <template>
-    <div class="modal" id="bakery-name-modal">
+    <div class="modal fade" id="bakery-name-modal">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content dialog">
                 <div class="modal-body">

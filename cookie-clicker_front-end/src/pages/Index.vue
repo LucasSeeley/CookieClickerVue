@@ -87,7 +87,7 @@ $(document).ready(function () {
     goldenCookie.setNextSpawnTime();
     setInterval(goldenCookie.removeGoldenCookie, 100);
     load();
-    if(getCookie("autosave" === 'true')){
+    if(getCookie("autosave") === 'true'){
         window.setInterval(save, 60000);
     }
 });

@@ -1,9 +1,9 @@
 <template>
-    <div class="modal" id="options-modal">
+    <div class="modal fade" id="options-modal">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content dialog">
                 <div class="modal-body">
-                    <button type="button" data-bs-target="#modal"
+                    <button type="button" data-bs-target="modal"
                         class="btn-close btn-close-white close-button" aria-lavel="Close"
                         data-bs-dismiss="modal"></button>
                     <div class="header">
@@ -15,7 +15,7 @@
                     </div>
                     <div class="button-box">
                         <button class="btn btn-outline-dark"
-                            data-bs-dismiss="modal" @click="doToggleAutosave">Confirm</button>
+                            data-bs-dismiss="modal" @click="doToggleAutosave()">Confirm</button>
                         <button class="btn btn-outline-dark" data-bs-dismiss="modal">Cancel</button>
                     </div>
                 </div>
@@ -32,7 +32,7 @@ export default{
     name: "OptionsModal",
     methods:{
         doToggleAutosave: function(){
-            options.toggleAutosave;
+            options.toggleAutosave();
         }
     }
 }
