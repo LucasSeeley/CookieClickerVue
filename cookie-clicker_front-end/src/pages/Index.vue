@@ -88,7 +88,7 @@ $(document).ready(function () {
     setInterval(goldenCookie.removeGoldenCookie, 100);
     load();
     if(getCookie("autosave") === 'true'){
-        window.setInterval(save, 60000);
+        window.setInterval(save, 10000);
     }
 });
 </script>

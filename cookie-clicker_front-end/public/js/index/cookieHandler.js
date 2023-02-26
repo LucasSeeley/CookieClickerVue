@@ -1,4 +1,5 @@
-﻿import { createToast } from "./toastController";
+﻿import { roundToNearest } from "../site";
+import { createToast } from "./toastController";
 
 //global variables
 export let cookies = 0;
@@ -36,6 +37,6 @@ export function changeCps(amount){
 }
 
 export function calculateCps(){
-    cookies+= cps / 100;
+    cookies = roundToNearest(cookies + cps, 0);
     updateGUI();
 }
