@@ -11,7 +11,7 @@
                     </div>
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" id="autosave-check">
-                        <label class="form-check-label" for="autosave-check">Autosave</label>
+                        <label class="form-check-label" for="autosave-check" id="autosave-check-text">Autosave</label>
                     </div>
                     <div class="button-box">
                         <button class="btn btn-outline-dark"
@@ -119,4 +119,17 @@ export default{
     border: 2px ridge #C0C0C0;
 }
 
+#autosave-check-text{
+    width: 15px;
+    float: left;
+}
+
+#autosave-check{
+    display: inline-flex;
+    width: 15px;
+}
+
+.form-check{
+    margin: 5%;
+}
 </style>
