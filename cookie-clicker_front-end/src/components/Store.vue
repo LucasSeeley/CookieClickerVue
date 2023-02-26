@@ -2,10 +2,6 @@
     <div class="store">
         <div class="header">Store</div>
         <hr />
-        <div class="category" id="switches"></div>
-        <hr />
-        <div class="category" id="upgrades"></div>
-        <hr />
         <div class="category" id="buildings">
             <StoreBuilding name="Cursor" description="Auto-clicks once every 10 seconds." identifier="cursor-building"
                 imgName="cursor.png" baseCost=15 />

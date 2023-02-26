@@ -47,6 +47,7 @@ export default {
 	border:none;
 	text-align:left;
 	line-height:inherit;
+    margin: 1%;
 }
 
 .item:hover 
