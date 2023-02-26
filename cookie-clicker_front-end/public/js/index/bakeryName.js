@@ -33,17 +33,15 @@ export function populateJson(){
         function (data)//Success
         {
             json = data;
-
-            if($("#bakery-name").text() != null){
+            if ($("#bakery-name").text() !== null && $("#bakery-name").text() !== "null") {
                 name = $("#bakery-name").text();
                 return;
             }
-
-            name = json.adjectives[randomInteger(0, json.adjectives.length)];
-            name += json.nouns[randomInteger(0, json.nouns.length)];
-
-            
-            $("#bakery-name").text(name);
+            if (name === "" || name == undefined || name === "undefined") {
+                name = json.adjectives[randomInteger(0, json.adjectives.length)];
+                name += json.nouns[randomInteger(0, json.nouns.length)];
+                $("#bakery-name").text(name);
+            }
         },
         function() // Failure
         {
