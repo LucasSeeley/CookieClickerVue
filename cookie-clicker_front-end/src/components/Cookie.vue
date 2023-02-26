@@ -20,7 +20,7 @@ export default{
     }
 }
 
-setInterval(cookieHandler.calculateCps, 10);
+setInterval(cookieHandler.calculateCps, 1500);
 
 </script>
 
