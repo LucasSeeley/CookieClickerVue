@@ -8,10 +8,13 @@ export let grandmas = 0;
 export let grandmaPrice = 100;
 let grandmaCPS = 5;
 export let farms = 0;
-export let farmPrice = 1100;
+export let farmPrice = 400;
 let farmCPS = 10;
+export let mines = 0;
+export let minePrice = 1100;
+let mineCPS = 50;
 
-export function load(_cursors, _grandmas, _farms, _cursorPrice, _grandmaPrice, _farmPrice)
+export function load(_cursors, _grandmas, _farms, _mines, _cursorPrice, _grandmaPrice, _farmPrice, _minePrice)
 {
     // cursors
     cursors = isNaN(_cursors) ? 0 : _cursors;
@@ -28,10 +31,18 @@ export function load(_cursors, _grandmas, _farms, _cursorPrice, _grandmaPrice, _
 
     // farms
     farms = isNaN(_farms) ? 0 : _farms;
-    farmPrice = isNaN(_farmPrice) ? 1100 : _farmPrice;
+    farmPrice = isNaN(_farmPrice) ? 400 : _farmPrice;
 
     document.getElementById("farm-building").querySelector(".price-text").innerHTML = Math.round(farmPrice);
     changeCps(cps + farmCPS * farms);
+
+
+    // mines
+    mines = isNaN(_mines) ? 0 : _mines;
+    minePrice = isNaN(_minePrice) ? 1100 : _minePrice;
+
+    document.getElementById("mine-building").querySelector(".price-text").innerHTML = Math.round(minePrice);
+    changeCps(cps + mineCPS * mines);
 }
 
 export function buy(event) 
@@ -76,6 +87,15 @@ export function buy(event)
                 event.currentTarget.querySelector(".price-text").innerHTML = Math.round(farmPrice);
             }
             break;
+        case "mine-building":
+            if(doPurchase(minePrice) === true){
+                changeCps(cps + mineCPS);
+                mines++;
+                minePrice *= 1.15;
+                minePrice = roundToNearest(minePrice, 0);
+                event.currentTarget.querySelector(".price-text").innerHTML = Math.round(minePrice);
+            }
+            break;
         default:
             console.error("Invalid ID was given to Building.");
     }
@@ -100,9 +120,13 @@ export function resetUpgrades() {
     grandmaPrice = 100;
     grandmaCPS = 5;
     farms = 0;
-    farmPrice = 1100;
+    farmPrice = 400;
     farmCPS = 10;
+    mines = 0;
+    minePrice = 1100;
+    mineCPS = 50;
     document.getElementById("cursor-building").querySelector(".price-text").innerHTML = Math.round(cursorPrice);
     document.getElementById("grandma-building").querySelector(".price-text").innerHTML = Math.round(grandmaPrice);
     document.getElementById("farm-building").querySelector(".price-text").innerHTML = Math.round(farmPrice);
+    document.getElementById("mine-building").querySelector(".price-text").innerHTML = Math.round(minePrice);
 }

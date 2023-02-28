@@ -16,7 +16,7 @@ export function cookieClicked() {
 }
 
 function updateGUI() {
-    document.getElementById("cookie-counter").innerHTML = cookies;
+    document.getElementById("cookie-counter").innerHTML = roundToNearest(cookies, 1);
     document.getElementById("cps-counter").innerHTML = cps;
 
 }
@@ -37,6 +37,6 @@ export function changeCps(amount){
 }
 
 export function calculateCps(){
-    cookies = roundToNearest(cookies + cps, 0);
+    cookies += cps/100;
     updateGUI();
 }

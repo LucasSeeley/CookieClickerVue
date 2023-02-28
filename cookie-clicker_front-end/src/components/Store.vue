@@ -8,7 +8,9 @@
             <StoreBuilding name="Grandma" description="A nice grandma to bake more cookies."
                 imgName="grandma.png" identifier="grandma-building" baseCost=100 />
             <StoreBuilding name="Farm" description="Grows cookie plants from cookie seeds." identifier="farm-building"
-                imgName="farm.png" baseCost=1100 />
+                imgName="farm.png" baseCost=400 />
+                <StoreBuilding name="Mine" description="" identifier="mine-building"
+                imgName="mine.png" baseCost=1100 />
         </div>
     </div>
 </template>

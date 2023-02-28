@@ -14,9 +14,11 @@ export function save()
     document.cookie = `cursors=${upgradeHandler.cursors}; SameSite=Secure; expires=Fri, 31 Dec 9999 23:59:59 GMT`;
     document.cookie = `grandmas=${upgradeHandler.grandmas}; SameSite=Secure; expires=Fri, 31 Dec 9999 23:59:59 GMT`;
     document.cookie = `farms=${upgradeHandler.farms}; SameSite=Secure; expires=Fri, 31 Dec 9999 23:59:59 GMT`;
+    document.cookie = `mines=${upgradeHandler.mines}; SameSite=Secure; expires=Fri, 31 Dec 9999 23:59:59 GMT`;
     document.cookie = `cursor-price=${upgradeHandler.cursorPrice}; SameSite=Secure; expires=Fri, 31 Dec 9999 23:59:59 GMT`;
     document.cookie = `grandma-price=${upgradeHandler.grandmaPrice}; SameSite=Secure; expires=Fri, 31 Dec 9999 23:59:59 GMT`;
     document.cookie = `farm-price=${upgradeHandler.farmPrice}; SameSite=Secure; expires=Fri, 31 Dec 9999 23:59:59 GMT`;
+    document.cookie = `mine-price=${upgradeHandler.minePrice}; SameSite=Secure; expires=Fri, 31 Dec 9999 23:59:59 GMT`;
 }
 
 export function load()
@@ -31,7 +33,7 @@ export function load()
 
     cookieHandler.changeCps(isNaN(cookieHandler.cps) ? 0 : cookieHandler.cps);
 
-    upgradeHandler.load(Number(getCookie('cursors')), Number(getCookie('grandmas')), Number(getCookie('farms')), Number(getCookie('cursor-price')), Number(getCookie('grandma-price')), Number(getCookie('farm-price')));
+    upgradeHandler.load(Number(getCookie('cursors')), Number(getCookie('grandmas')), Number(getCookie('farms')), Number(getCookie('mines')), Number(getCookie('cursor-price')), Number(getCookie('grandma-price')), Number(getCookie('farm-price')), Number(getCookie('mine-price')));
 
     /* load bakery name*/
     
